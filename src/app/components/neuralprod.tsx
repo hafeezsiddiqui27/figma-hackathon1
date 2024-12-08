@@ -24,10 +24,7 @@ const NeuralProduct = () => {
           SUMMER 2020
         </h4>
 
-        {/* Vita Classic Product */}
-        {/* <h1 className="text-[58px]  font-bold">
-          Part of the Neural Universe
-        </h1> */}
+     
                 <h2 className="text-[40px] leading-[50px] font-bold tracking-[0.2px]">
           Part of the Neural Universe
         </h2>
