@@ -9,9 +9,9 @@ const Aboutheader = () => {
           <nav className="space-x-6">
                             <a href="/" className="hover:text-blue-600">Home</a>
                             <a href="/about" className="hover:text-blue-600">About</a>    
-            <a href="#" className="hover:text-blue-600">Product</a>
-            <a href="#" className="hover:text-blue-600">Pricing</a>
-            <a href="#" className="hover:text-blue-600">Contact</a>
+            <a href="/team" className="hover:text-blue-600">Team</a>
+            <a href="/pricing" className="hover:text-blue-600">Pricing</a>
+            <a href="/contact" className="hover:text-blue-600">Contact</a>
           </nav>
           <div className="space-x-4 mr-10">
             <button className="text-blue-500">Login</button>

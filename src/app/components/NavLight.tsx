@@ -19,8 +19,8 @@ const NavLight = () => {
             Shop <FaChevronDown className="ml-1 text-sm" />
           </a>
           <a href="/about" className="text-black hover:text-gray-700">About</a>
-          <a href="/team" className="text-black hover:text-gray-700">Blog</a>
-          <a href="/team" className="text-black hover:text-gray-700">Contact</a>
+          <a href="/team" className="text-black hover:text-gray-700">Team</a>
+          <a href="/contact" className="text-black hover:text-gray-700">Contact</a>
         </div>
 
         {/* Right Section: Blue text with icons */}

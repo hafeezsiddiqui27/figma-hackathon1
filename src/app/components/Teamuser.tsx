@@ -12,7 +12,7 @@ const Teamuser: React.FC<CardProps> = ({ picture, username, profession }) => {
     <div className="w-[329px] h-[382px] flex flex-col items-center">
       {/* Image */}
       <div className="w-[280px] h-[231px]">
-        <Image src={picture} alt={username} className="w-full h-full object-fill" />
+        <Image src={picture} alt={username} height={300} width={300} className="w-full h-full object-fill" />
       </div>
 
       {/* User Info */}

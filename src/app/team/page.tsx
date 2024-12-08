@@ -35,47 +35,47 @@ const Team = () => {
               <div className="flex justify-center">
         <div className="grid grid-cols-1 sm:grid-cols-2   md:grid-cols-3 gap-6 w-full">
           <Teamuser
-            picture="feat1.jpg"
+            picture="/feat1.jpg"
             username="John Doe"
             profession="Software Developer"
           />
           <Teamuser
-            picture="feat1.jpg"
+            picture="/feat1.jpg"
             username="John Doe"
             profession="Software Developer"
           />
           <Teamuser
-            picture="feat1.jpg"
+            picture="/feat1.jpg"
             username="John Doe"
             profession="Software Developer"
           />
           <Teamuser
-            picture="feat1.jpg"
+            picture="/feat1.jpg"
             username="John Doe"
             profession="Software Developer"
           />
           <Teamuser
-            picture="feat1.jpg"
+            picture="/feat1.jpg"
             username="John Doe"
             profession="Software Developer"
           />
           <Teamuser
-            picture="feat1.jpg"
+            picture="/feat1.jpg"
             username="John Doe"
             profession="Software Developer"
           />
           <Teamuser
-            picture="feat1.jpg"
+            picture="/feat1.jpg"
             username="John Doe"
             profession="Software Developer"
           />
           <Teamuser
-            picture="feat1.jpg"
+            picture="/feat1.jpg"
             username="John Doe"
             profession="Software Developer"
           />
           <Teamuser
-            picture="feat1.jpg"
+            picture="/feat1.jpg"
             username="John Doe"
             profession="Software Developer"
           />
