@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import { FaFacebook, FaInstagram, FaTwitter } from 'react-icons/fa';
 
 interface CardProps {
@@ -11,7 +12,7 @@ const Teamuser: React.FC<CardProps> = ({ picture, username, profession }) => {
     <div className="w-[329px] h-[382px] flex flex-col items-center">
       {/* Image */}
       <div className="w-[280px] h-[231px]">
-        <img src={picture} alt={username} className="w-full h-full object-fill" />
+        <Image src={picture} alt={username} className="w-full h-full object-fill" />
       </div>
 
       {/* User Info */}

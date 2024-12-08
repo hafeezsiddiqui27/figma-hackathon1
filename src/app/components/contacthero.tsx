@@ -1,6 +1,6 @@
 
 import Image from "next/image";
-import Aboutwork from "./work";
+
 import Aboutheader from "./aboutheader";
 
 
