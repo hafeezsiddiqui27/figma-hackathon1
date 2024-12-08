@@ -4,6 +4,7 @@ import NavLight from "./components/NavLight";
 import EditorSection from "./components/editorspick";
 import FeaturedProducts from "./components/feauturedProducts";
 import ClassicProduct from "./components/classicprod";
+import NeuralProduct from "./components/neuralprod";
 
 export default function Home() {
   return (
@@ -23,6 +24,7 @@ export default function Home() {
       <EditorSection />
       <FeaturedProducts />
       <ClassicProduct />
+      <NeuralProduct />
    </div>
   );
 }

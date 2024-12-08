@@ -6,7 +6,7 @@ const EditorSection = () => {
     <section className="py-16 px-4 min-h-screen flex flex-col justify-center bg-[#FAFAFA]">
       {/* Editors Pick Title */}
       <div className="text-center mb-[-30px]">
-        <h2 className="text-3xl font-bold">Editor's Pick</h2>
+        <h2 className="text-3xl font-bold">Editor&apos;s Pick</h2>
         <p className="text-xl text-gray-700 mt-4">Problems trying to resolve the conflict between </p>
       </div>
 
