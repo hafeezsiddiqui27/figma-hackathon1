@@ -5,14 +5,16 @@ import EditorSection from "./components/editorspick";
 import FeaturedProducts from "./components/feauturedProducts";
 import ClassicProduct from "./components/classicprod";
 import NeuralProduct from "./components/neuralprod";
+import Footer from "./components/Footer";
+import Herosection from "./components/hero";
+import FeaturedPosts from "./components/featuredposts";
 
 export default function Home() {
   return (
     <div>
       <Nav1 />
       <NavLight />
-      <div className="relative mt-[0px]"> {/* Adjust the margin-top to match your navbar height */}
-      {/* Hero Image */}
+      {/* <div className="relative mt-[0px]">
       <Image
         src="/hero1.jpg"
         alt="hero image"
@@ -20,11 +22,14 @@ export default function Home() {
         width={800}
         className="object-cover w-full h-screen"
         />
-      </div>
+      </div> */}
+      <Herosection />
       <EditorSection />
       <FeaturedProducts />
       <ClassicProduct />
       <NeuralProduct />
+      <FeaturedPosts />
+      <Footer />
    </div>
   );
 }
