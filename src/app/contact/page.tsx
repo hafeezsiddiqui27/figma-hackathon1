@@ -1,10 +1,17 @@
 import React from 'react'
-import Contacthero from '../components/contacthero'
+
+import ContactUs from '../components/contact/contacthero'
+import Contactdetail from '../components/contact/contactdet'
+
+import Header from '../components/aboutheader'
 
 const Contact = () => {
   return (
-      <div>
-          <Contacthero />
+    <div>
+   
+      <Header/>
+      <ContactUs />
+      <Contactdetail />
     </div>
   )
 }

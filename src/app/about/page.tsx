@@ -1,17 +1,12 @@
 import React from 'react'
-import AboutHero from '../components/abouthero'
+import AboutUs from '../components/about/aboutheros'
 
 const About = () => {
     return (
-        <div className="">
-             <div className="bg-gray-50 text-gray-800">
-      {/* Header */}
-     
 
-        
-                <AboutHero />
-            </div>
-            </div>
+        <div>
+            <AboutUs />
+        </div>
   )
 }
 
