@@ -10,7 +10,7 @@ import FeaturedPosts from "./components/home/featuredposts";
 
 export default function Home() {
   return (
-    <div className="w-[80vw]">
+    <div className="">
       <div className="hidden md:block">
         <Nav1 />
         <NavLight />
