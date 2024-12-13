@@ -112,7 +112,7 @@ const ShopPage = () => {
 
       <ShopSection />
 
-      <section className="py-6 w-full">
+      {/* <section className="py-6 w-full">
         <div className="relative w-full h-[300px]">
           <Image
             src="/aboutcomplogo.png"
@@ -122,7 +122,20 @@ const ShopPage = () => {
             className="absolute inset-0 w-full h-full"
           />
         </div>
-      </section>
+        
+      </section> */}
+       <section className="py-6 w-full">
+      <div className="relative w-full h-[300px] sm:h-[500px]">
+        {/* Image that will appear vertically on small devices */}
+        <Image
+          src="/aboutcomplogo.png"
+          alt="logos"
+          layout="fill" // Ensures the image covers the full container
+          objectFit="contain" // Keeps the image aspect ratio intact
+          className="absolute inset-0 w-full h-full sm:w-auto sm:h-auto sm:rotate-0 rotate-90" // Apply rotation on small devices
+        />
+      </div>
+    </section>
       <Footer />
 
       {/* Products Section */}

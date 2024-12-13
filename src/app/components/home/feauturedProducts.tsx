@@ -42,7 +42,7 @@ const FeaturedProducts = () => {
   return (
     <section className="py-16 px-4">
       {/* Top Section */}
-      <div className="w-[691px] h-[102px] mx-auto text-center mb-12">
+      <div className="w-[691px] h-[102px] mx-auto md:text-center mb-12">
         <h4 className="text-[20px] font-bold  text-[#737373] mb-2">
           Featured Products
         </h4>

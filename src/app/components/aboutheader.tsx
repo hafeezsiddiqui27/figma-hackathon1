@@ -182,12 +182,12 @@ const Header = () => {
                 Home
               </li>
             </Link>
-            <Link href="/product">
+            <Link href="/pricing">
               <li className="cursor-pointer hover:text-[#23A6F0] transition-all">
                 Product
               </li>
             </Link>
-            <Link href="/pricing">
+            <Link href="/price">
               <li className="cursor-pointer hover:text-[#23A6F0] transition-all">
                 Pricing
               </li>
@@ -242,12 +242,12 @@ const Header = () => {
               Home
             </li>
           </Link>
-          <Link href="/product">
+          <Link href="/pricing">
             <li className="cursor-pointer hover:text-[#23A6F0] transition-all">
               Product
             </li>
           </Link>
-          <Link href="/pricing">
+          <Link href="/price">
             <li className="cursor-pointer hover:text-[#23A6F0] transition-all">
               Pricing
             </li>
