@@ -4,7 +4,7 @@ import Image from "next/image";
 import React from "react";
 import { FaFacebookF, FaInstagram, FaTwitter } from "react-icons/fa";
 import Link from "next/link";
-
+import Header from "../aboutheader";
 
 // Team data
 const teamMembers = [
@@ -39,7 +39,7 @@ const stats = [
 const AboutAndTeam: React.FC = () => {
   return (
       <div>
- 
+ <Header />
       {/* About Us Section */}
       <section>
         <div className="flex flex-col md:flex-row items-center justify-between px-4 py-8">
