@@ -1,29 +1,4 @@
-// // import React from 'react'
 
-// // const Aboutheader = () => {
-// //   return (
-// //       <div>
-// //            <header className="bg-white py-6 shadow">
-// //         <div className="container mx-auto flex justify-between items-center px-4">
-// //           <h1 className="text-2xl font-bold">Bandage</h1>
-// //           <nav className="space-x-6">
-// //                             <a href="/" className="hover:text-blue-600">Home</a>
-// //                             <a href="/about" className="hover:text-blue-600">About</a>
-// //             <a href="/team" className="hover:text-blue-600">Team</a>
-// //             <a href="/pricing" className="hover:text-blue-600">Pricing</a>
-// //             <a href="/contact" className="hover:text-blue-600">Contact</a>
-// //           </nav>
-// //           <div className="space-x-4 mr-10">
-// //             <button className="text-blue-500">Login</button>
-// //             <button className="bg-blue-500 text-white px-4 py-2 rounded">Become a member</button>
-// //           </div>
-// //         </div>
-// //       </header>
-// //     </div>
-// //   )
-// // }
-
-// // export default Aboutheader
 // "use client";
 // import Link from "next/link";
 // import React, { useState } from "react";
@@ -43,31 +18,27 @@
 //   };
 
 //   return (
-//     <header className="bg-white shadow-md py-4 w-[80vw] md:w-full">
-//       <div className="container mx-auto flex items-center justify-between px-4">
+//     <header className="bg-white shadow-md py-4 w-screen">
+//       <div className="mx-auto flex items-center justify-between px-4 w-full max-w-screen-xl">
 //         {/* Logo */}
 //         <div className="text-[24px] font-bold text-[#252B42] mr-8">
-//           {" "}
-//           {/* Add mr-8 for margin-right */}
 //           Bandage
 //         </div>
 
 //         {/* Navbar (Desktop) */}
 //         <nav className="hidden md:flex flex-row items-center gap-8 text-[14px] text-[#737373] font-bold ml-20">
 //           <ul className="list-none flex gap-8">
-//             {" "}
-//             {/* Add list-none here to remove dots */}
 //             <Link href="/">
 //               <li className="cursor-pointer hover:text-[#23A6F0] transition-all">
 //                 Home
 //               </li>
 //             </Link>
-//             <Link href="/product">
+//             <Link href="/pricing">
 //               <li className="cursor-pointer hover:text-[#23A6F0] transition-all">
 //                 Product
 //               </li>
 //             </Link>
-//             <Link href="/pricing">
+//             <Link href="/price">
 //               <li className="cursor-pointer hover:text-[#23A6F0] transition-all">
 //                 Pricing
 //               </li>
@@ -83,7 +54,7 @@
 //         {/* Icons and Buttons */}
 //         <div className="flex items-center gap-4 ml-auto">
 //           {/* Search Icon (Hidden on desktop) */}
-//           <button className="md:hidden flex items-center justify-center p-2  text-[#252B42] hover:text-[#23A6F0] hover:border-[#23A6F0] transition-all">
+//           <button className="md:hidden flex items-center justify-center p-2 text-[#252B42] hover:text-[#23A6F0] hover:border-[#23A6F0] transition-all">
 //             <FiSearch size={20} />
 //           </button>
 
@@ -114,24 +85,20 @@
 
 //       {/* Mobile Menu (Appears when hamburger icon is clicked) */}
 //       <div
-//         className={`md:hidden ${
-//           isMobileMenuOpen ? "block" : "hidden"
-//         } bg-white shadow-md mt-4 px-4 py-6 flex justify-center items-center x`}
+//         className={`md:hidden ${isMobileMenuOpen ? "block" : "hidden"} bg-white shadow-md mt-4 px-4 py-6 w-full`}
 //       >
 //         <ul className="list-none flex flex-col gap-4 text-[20px] text-[#737373] font-bold">
-//           {" "}
-//           {/* Add list-none here too */}
 //           <Link href="/">
 //             <li className="cursor-pointer hover:text-[#23A6F0] transition-all">
 //               Home
 //             </li>
 //           </Link>
-//           <Link href="/product">
+//           <Link href="/pricing">
 //             <li className="cursor-pointer hover:text-[#23A6F0] transition-all">
 //               Product
 //             </li>
 //           </Link>
-//           <Link href="/pricing">
+//           <Link href="/price">
 //             <li className="cursor-pointer hover:text-[#23A6F0] transition-all">
 //               Pricing
 //             </li>
@@ -167,16 +134,16 @@ const Header = () => {
   };
 
   return (
-    <header className="bg-white shadow-md py-4 w-screen">
-      <div className="mx-auto flex items-center justify-between px-4 w-full max-w-screen-xl">
+    <header className="bg-white shadow-md py-4 w-full">
+      <div className="mx-auto flex items-center justify-between px-4 sm:px-6 md:px-8 max-w-screen-xl">
         {/* Logo */}
         <div className="text-[24px] font-bold text-[#252B42] mr-8">
           Bandage
         </div>
 
         {/* Navbar (Desktop) */}
-        <nav className="hidden md:flex flex-row items-center gap-8 text-[14px] text-[#737373] font-bold ml-20">
-          <ul className="list-none flex gap-8">
+        <nav className="hidden md:flex flex-row items-center gap-6 text-[14px] text-[#737373] font-bold ml-10">
+          <ul className="list-none flex gap-6">
             <Link href="/">
               <li className="cursor-pointer hover:text-[#23A6F0] transition-all">
                 Home
@@ -203,12 +170,12 @@ const Header = () => {
         {/* Icons and Buttons */}
         <div className="flex items-center gap-4 ml-auto">
           {/* Search Icon (Hidden on desktop) */}
-          <button className="md:hidden flex items-center justify-center p-2 text-[#252B42] hover:text-[#23A6F0] hover:border-[#23A6F0] transition-all">
+          <button className="md:hidden flex items-center justify-center p-2 text-[#252B42] hover:text-[#23A6F0] transition-all">
             <FiSearch size={20} />
           </button>
 
           {/* Add to Cart Icon (Hidden on desktop) */}
-          <button className="md:hidden flex items-center justify-center p-2 text-[#252B42] hover:text-[#23A6F0] hover:border-[#23A6F0] transition-all">
+          <button className="md:hidden flex items-center justify-center p-2 text-[#252B42] hover:text-[#23A6F0] transition-all">
             <FiShoppingCart size={20} />
           </button>
 
@@ -223,7 +190,7 @@ const Header = () => {
             <FiArrowRight className="text-lg" />
           </button>
 
-          {/* Mobile Hamburger Menu (Appears at the end on mobile) */}
+          {/* Mobile Hamburger Menu */}
           <div className="md:hidden flex items-center">
             <button onClick={toggleMobileMenu} className="text-[#252B42]">
               {isMobileMenuOpen ? <FiX size={24} /> : <FiMenu size={24} />}
@@ -232,11 +199,13 @@ const Header = () => {
         </div>
       </div>
 
-      {/* Mobile Menu (Appears when hamburger icon is clicked) */}
+      {/* Mobile Menu */}
       <div
-        className={`md:hidden ${isMobileMenuOpen ? "block" : "hidden"} bg-white shadow-md mt-4 px-4 py-6 w-full`}
+        className={`md:hidden ${
+          isMobileMenuOpen ? "block" : "hidden"
+        } bg-white shadow-md mt-4 px-4 py-6 w-full`}
       >
-        <ul className="list-none flex flex-col gap-4 text-[20px] text-[#737373] font-bold">
+        <ul className="list-none flex flex-col gap-4 text-[18px] text-[#737373] font-bold">
           <Link href="/">
             <li className="cursor-pointer hover:text-[#23A6F0] transition-all">
               Home

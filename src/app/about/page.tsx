@@ -1,13 +1,12 @@
-import React from 'react'
-import AboutUs from '../components/about/aboutheros'
+import React from "react";
+import AboutUs from "../components/about/aboutheros";
 
 const About = () => {
-    return (
+  return (
+    <div className="w-full px-4 sm:px-6 md:px-10">
+      <AboutUs />
+    </div>
+  );
+};
 
-        <div>
-            <AboutUs />
-        </div>
-  )
-}
-
-export default About
+export default About;

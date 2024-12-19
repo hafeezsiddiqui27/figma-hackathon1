@@ -4,6 +4,7 @@ import NavLight from "../components/NavLight";
 import ShopSection from "../components/Shopsection";
 import Footer from "../components/Footer";
 import Card from "../components/home/featcard";
+import Header from "../components/aboutheader";
 
 const ShopPage = () => {
   const products = [
@@ -107,9 +108,16 @@ const ShopPage = () => {
 
   return (
     <div className="bg-white">
-      <Nav1 />
-      <NavLight />
+      {/* <Nav1 />
+      <NavLight /> */}
+      <div className="hidden md:block">
+        <Nav1 />
+        <NavLight />
+      </div>
 
+      <div className="md:hidden">
+        <Header />
+      </div>
       <ShopSection />
 
       {/* <section className="py-6 w-full">
@@ -132,7 +140,7 @@ const ShopPage = () => {
           alt="logos"
           layout="fill" // Ensures the image covers the full container
           objectFit="contain" // Keeps the image aspect ratio intact
-          className="absolute inset-0 w-full h-full sm:w-auto sm:h-auto sm:rotate-0 rotate-90" // Apply rotation on small devices
+          className="absolute inset-0 w-full h-full sm:w-auto sm:h-auto " // Apply rotation on small devices
         />
       </div>
     </section>
