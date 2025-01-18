@@ -328,7 +328,7 @@
 
 // export default ProductPage;
 
-import { ToastContainer, toast } from "react-toastify";
+
 import { client } from "@/sanity/lib/client";
 import { notFound } from "next/navigation";
 import { AiOutlineHeart } from "react-icons/ai";
@@ -399,7 +399,7 @@ const ProductPage = async ({ params }: { params: { id: string } }) => {
 
   const discountedPrice =
     product.price - (product.price * product.discountPercentage) / 100;
-  const notify = () => toast("Wow so easy!");
+
   return (
     <div className="bg-gray-50">
       <Nav1 />

@@ -5,7 +5,6 @@ import "./globals.css";
 import Footer from "./components/Footer";
 import CartProvider from "./components/Providers";
 import LoadingWrapper from "./components/loadingwrapper";
-import ClerkProviders from "@/providers";
 
 
 const geistSans = localFont({
@@ -31,9 +30,9 @@ export default function RootLayout({
       >
         
         <LoadingWrapper>
-          <ClerkProviders>
+    
             <CartProvider>{children}</CartProvider>
-            </ClerkProviders>
+           
         </LoadingWrapper>
 
         <Footer />
