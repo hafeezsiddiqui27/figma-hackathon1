@@ -2,6 +2,7 @@
 import React from "react";
 
 interface CardProps {
+  slug?: string;
   image: string;
   title: string;
   originalPrice: string;

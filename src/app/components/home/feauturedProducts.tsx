@@ -1,11 +1,11 @@
-
 import React from "react";
 import Card from "./featcard";
-
+import Link from "next/link";
 
 const FeaturedProducts = () => {
   const products = [
     {
+      slug: "graphic-design-1",
       image: "/feat1.jpg",
       title: "Graphic Design",
       desc: "English Department",
@@ -14,6 +14,7 @@ const FeaturedProducts = () => {
       colors: ["#0000FF", "#00FF00", "#FFA500", "#001F3F"], // Blue, Green, Orange, Dark Navy Blue
     },
     {
+      slug: "graphic-design-1",
       image: "/feat2.jpg",
       title: "Graphic Design",
       desc: "English Department",
@@ -22,6 +23,7 @@ const FeaturedProducts = () => {
       colors: ["#0000FF", "#00FF00", "#FFA500", "#001F3F"], // Blue, Green, Orange, Dark Navy Blue
     },
     {
+      slug: "graphic-design-1",
       image: "/feat3.jpg",
       title: "Graphic Design",
       desc: "English Department",
@@ -57,14 +59,17 @@ const FeaturedProducts = () => {
       {/* Featured Products Cards */}
       <div className="flex flex-wrap justify-center gap-6">
         {products.map((product, index) => (
-          <Card
-            key={index}
-            image={product.image}
-            title={product.title}
-            originalPrice={product.originalPrice}
-            discountedPrice={product.discountedPrice}
-            colors={product.colors}
-          />
+          <Link key={index} href={`/products/${product.slug}`}>
+            <Card
+              key={index}
+              image={product.image}
+              title={product.title}
+              originalPrice={product.originalPrice}
+              discountedPrice={product.discountedPrice}
+              colors={product.colors}
+              // slug={product.slug}
+            />
+          </Link>
         ))}
       </div>
     </section>
@@ -72,3 +77,20 @@ const FeaturedProducts = () => {
 };
 
 export default FeaturedProducts;
+{
+  /* <div className="flex flex-wrap justify-center gap-6">
+        {products.map((product, index) => (
+          <Link key={index} href={`/products/${product.slug}`}>
+            
+              <div className="card">
+                <img src={product.image} alt={product.title} />
+                <h4>{product.title}</h4>
+                <p>{product.desc}</p>
+                <p>{product.originalPrice}</p>
+                <p>{product.discountedPrice}</p>
+              </div>
+            
+          </Link>
+        ))}
+      </div> */
+}

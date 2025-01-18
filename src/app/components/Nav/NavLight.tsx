@@ -15,7 +15,7 @@ const NavLight = () => {
         {/* Middle Section: Links with black text */}
         <div className="flex space-x-8">
           <a href="/" className="text-black hover:text-gray-700">Home</a>
-          <a href="/pricing" className="text-black hover:text-gray-700 flex items-center">
+          <a href="/listing" className="text-black hover:text-gray-700 flex items-center">
             Shop <FaChevronDown className="ml-1 text-sm" />
           </a>
           <a href="/about" className="text-black hover:text-gray-700">About</a>
@@ -32,7 +32,7 @@ const NavLight = () => {
           <a href="#" className="text-blue-500">
             <FaSearch className="" />
           </a>
-          <a href="#" className="text-blue-500">
+          <a href="/cart" className="text-blue-500">
             <FaShoppingCart className="" />
           </a>
           <a href="#" className="text-blue-500">

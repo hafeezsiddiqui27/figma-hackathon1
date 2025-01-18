@@ -1,5 +1,5 @@
-import Nav1 from "./components/Nav1";
-import NavLight from "./components/NavLight";
+import Nav1 from "./components/Nav/Nav1";
+import NavLight from "./components/Nav/NavLight";
 import EditorSection from "./components/home/editorspick";
 import FeaturedProducts from "./components/home/feauturedProducts";
 import ClassicProduct from "./components/home/classicprod";
