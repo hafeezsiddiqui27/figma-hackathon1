@@ -1,9 +1,8 @@
-import Image from "next/image";
+
 import Nav1 from "../components/Nav/Nav1";
 import NavLight from "../components/Nav/NavLight";
 import ShopSection from "../components/Shopsection";
 
-import Card from "../components/home/featcard";
 import Header from "../components/aboutheader";
 
 import ProductList from "../producting/page";
