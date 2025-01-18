@@ -1,4 +1,4 @@
-// // // "use client";
+ "use client";
 
 // // // import { useShoppingCart } from "use-shopping-cart";
 // // // // import { urlFor } from "@/sanity/lib/image";
@@ -186,7 +186,6 @@ import { AiOutlineShoppingCart } from "react-icons/ai";
 //     </button>
 //   );
 // }
-("use client");
 
 import { useShoppingCart } from "use-shopping-cart";
 
