@@ -1,10 +1,9 @@
-
 "use client";
 import Link from "next/link";
 import React, { useState } from "react";
 import { FiArrowRight, FiMenu, FiX } from "react-icons/fi";
 import CartIcon from "./CartIcon";
-import SearchBar from "./Searchbar";
+import SearchBar from "./FindBar";
 
 const Header = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -19,9 +18,8 @@ const Header = () => {
         {/* Logo */}
         <div className="text-[24px] font-bold text-[#252B42] mr-8">Bandage</div>
         <div className="relative">
-            <SearchBar />
-          </div>
-
+          <SearchBar />
+        </div>
 
         {/* Navbar (Desktop) */}
         <nav className="hidden md:flex flex-row items-center gap-6 text-[14px] text-[#737373] font-bold ml-10">
@@ -52,7 +50,7 @@ const Header = () => {
         {/* Icons and Buttons */}
         <div className="flex items-center gap-4 ml-auto">
           {/* Search Bar */}
-         
+
           {/* Cart Icon */}
           <CartIcon />
 

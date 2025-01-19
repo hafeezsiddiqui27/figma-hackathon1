@@ -233,8 +233,14 @@
 // export default NavLight;
 "use client";
 import React, { useState } from "react";
-import { FaUser, FaHeart, FaChevronDown, FaBars, FaTimes } from "react-icons/fa";
-import SearchBar from "../searchBar";
+import {
+  FaUser,
+  FaHeart,
+  FaChevronDown,
+  FaBars,
+  FaTimes,
+} from "react-icons/fa";
+import SearchBar from "../FindBar";
 import CartIcon from "../CartIcon";
 
 const NavLight = () => {
@@ -255,7 +261,10 @@ const NavLight = () => {
           <a href="/" className="text-black hover:text-gray-700">
             Home
           </a>
-          <a href="/listing" className="text-black hover:text-gray-700 flex items-center">
+          <a
+            href="/listing"
+            className="text-black hover:text-gray-700 flex items-center"
+          >
             Shop <FaChevronDown className="ml-1 text-sm" />
           </a>
           <a href="/about" className="text-black hover:text-gray-700">
@@ -271,7 +280,7 @@ const NavLight = () => {
 
         {/* Right Section: Blue text with icons */}
         <div className="flex items-center space-x-6">
-          <a href="#" className="text-blue-500 flex items-center hidden sm:flex">
+          <a href="#" className="text-blue-500 flex items-center  sm:flex">
             <FaUser className="mr-2" />
             Login/Signup
           </a>
