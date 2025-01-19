@@ -1,4 +1,3 @@
-
 // import { client } from "@/sanity/lib/client";
 // import { notFound } from "next/navigation";
 // import { AiOutlineHeart } from "react-icons/ai";
@@ -157,17 +156,15 @@
 //           </div>
 //         </div>
 //       </div>
-  
+
 //   );
 // };
 
 // export default ProductPage;
-import React from 'react'
+import React from "react";
 
 const page = () => {
-  return (
-    <div>page</div>
-  )
-}
+  return <div>page</div>;
+};
 
-export default page
+export default page;
