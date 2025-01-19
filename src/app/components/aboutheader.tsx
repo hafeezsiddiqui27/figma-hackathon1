@@ -103,7 +103,7 @@ const {handleCartClick } = useShoppingCart();
               Home
             </li>
           </Link>
-          <Link href="/pricing">
+          <Link href="/listing">
             <li className="cursor-pointer hover:text-[#23A6F0] transition-all">
               Product
             </li>
