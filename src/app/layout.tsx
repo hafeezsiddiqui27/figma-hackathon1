@@ -8,16 +8,6 @@ import LoadingWrapper from "./components/loadingwrapper";
 
 // app/layout.tsx
 
-export const metadata = {
-  title: "Aura ",
-  description:
-    "Aura - Providing the best products and services for your needs.",
-  applicationName: "Aura",
-  keywords: ["Aura", "Shopping", "E-commerce", "Best Products"],
-  authors: [
-    { name: "Hafeez Siddiqui", url: "https://figma-hackathon1.vercel.app/" },
-  ],
-};
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
   variable: "--font-geist-sans",
