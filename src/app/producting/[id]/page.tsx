@@ -335,6 +335,7 @@ import { AiOutlineHeart } from "react-icons/ai";
 import Nav1 from "@/app/components/Nav/Nav1";
 import NavLight from "@/app/components/Nav/NavLight";
 import AddToBag from "@/app/components/AddToBag";
+import Header from "@/app/components/aboutheader";
 
 // Define a color map for Tailwind classes (for color selections)
 const colorMap: Record<string, string> = {
@@ -402,8 +403,15 @@ const ProductPage = async ({ params }: { params: { id: string } }) => {
 
   return (
     <div className="bg-gray-50">
-      <Nav1 />
-      <NavLight />
+    <div className="hidden md:block">
+        <Nav1 />
+        <NavLight />
+      </div>
+
+      {/* Header for smaller screens */}
+      <div className="md:hidden">
+        <Header />
+      </div>
       <div className="container mx-auto px-6 mt-16 md:mt-24">
         <div className="flex flex-col lg:flex-row gap-12 bg-white p-8 rounded-xl shadow-lg">
           {/* Left: Product Image */}
