@@ -1,4 +1,3 @@
-
 import Nav1 from "../components/Nav/Nav1";
 import NavLight from "../components/Nav/NavLight";
 import ShopSection from "../components/Shopsection";

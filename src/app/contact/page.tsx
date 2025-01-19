@@ -6,7 +6,6 @@ import Contactdetail from "../components/contact/contactdet";
 import Header from "../components/aboutheader";
 
 const Contact = () => {
-  
   return (
     <div>
       <Header />

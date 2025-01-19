@@ -2,14 +2,9 @@
 "use client";
 import Link from "next/link";
 import React, { useState } from "react";
-import {
-  FiArrowRight,
-  FiMenu,
-  FiX,
-  FiSearch,
-  FiShoppingCart,
-} from "react-icons/fi";
-import { useShoppingCart } from "use-shopping-cart";
+import { FiArrowRight, FiMenu, FiX } from "react-icons/fi";
+import CartIcon from "./CartIcon";
+import SearchBar from "./Searchbar";
 
 const Header = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -17,14 +12,16 @@ const Header = () => {
   const toggleMobileMenu = () => {
     setIsMobileMenuOpen((prevState) => !prevState);
   };
-const {handleCartClick } = useShoppingCart();
+
   return (
     <header className="bg-white shadow-md py-4 w-full">
       <div className="mx-auto flex items-center justify-between px-4 sm:px-6 md:px-8 max-w-screen-xl">
         {/* Logo */}
-        <div className="text-[24px] font-bold text-[#252B42] mr-8">
-          Bandage
-        </div>
+        <div className="text-[24px] font-bold text-[#252B42] mr-8">Bandage</div>
+        <div className="relative">
+            <SearchBar />
+          </div>
+
 
         {/* Navbar (Desktop) */}
         <nav className="hidden md:flex flex-row items-center gap-6 text-[14px] text-[#737373] font-bold ml-10">
@@ -54,24 +51,12 @@ const {handleCartClick } = useShoppingCart();
 
         {/* Icons and Buttons */}
         <div className="flex items-center gap-4 ml-auto">
-          {/* Search Icon (Hidden on desktop) */}
-          <button className="md:hidden flex items-center justify-center p-2 text-[#252B42] hover:text-[#23A6F0] transition-all">
-            <FiSearch size={20} />
-          </button>
-
+          {/* Search Bar */}
          
+          {/* Cart Icon */}
+          <CartIcon />
 
-<Link href="/cart">
-  <button 
-    className="md:flex items-center justify-center p-2 text-[#252B42] hover:text-[#23A6F0] transition-all"
-    onClick={() => handleCartClick()} // This will handle additional logic on click
-  >
-    <FiShoppingCart size={20} />
-  </button>
-</Link>
-
-
-         
+          {/* Login Button (Hidden on mobile) */}
           <button className="hidden md:block px-4 py-2 text-[#23A6F0] rounded hover:bg-[#23A6F0] font-bold hover:text-white transition-all">
             Login
           </button>
@@ -93,9 +78,7 @@ const {handleCartClick } = useShoppingCart();
 
       {/* Mobile Menu */}
       <div
-        className={`md:hidden ${
-          isMobileMenuOpen ? "block" : "hidden"
-        } bg-white shadow-md mt-4 px-4 py-6 w-full`}
+        className={`md:hidden ${isMobileMenuOpen ? "block" : "hidden"} bg-white shadow-md mt-4 px-4 py-6 w-full`}
       >
         <ul className="list-none flex flex-col gap-4 text-[18px] text-[#737373] font-bold">
           <Link href="/">

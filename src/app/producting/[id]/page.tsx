@@ -328,7 +328,6 @@
 
 // export default ProductPage;
 
-
 import { client } from "@/sanity/lib/client";
 import { notFound } from "next/navigation";
 import { AiOutlineHeart } from "react-icons/ai";
@@ -336,6 +335,7 @@ import Nav1 from "@/app/components/Nav/Nav1";
 import NavLight from "@/app/components/Nav/NavLight";
 import AddToBag from "@/app/components/AddToBag";
 import Header from "@/app/components/aboutheader";
+import SocialShare from "@/app/components/Share";
 
 // Define a color map for Tailwind classes (for color selections)
 const colorMap: Record<string, string> = {
@@ -403,7 +403,7 @@ const ProductPage = async ({ params }: { params: { id: string } }) => {
 
   return (
     <div className="bg-gray-50">
-    <div className="hidden md:block">
+      <div className="hidden md:block">
         <Nav1 />
         <NavLight />
       </div>
@@ -508,6 +508,7 @@ const ProductPage = async ({ params }: { params: { id: string } }) => {
               <button className="flex items-center gap-2 py-2 px-4 border rounded-full text-black hover:bg-red-700 transition duration-300">
                 <AiOutlineHeart />
               </button>
+              <SocialShare />
             </div>
           </div>
         </div>

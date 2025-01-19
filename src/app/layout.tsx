@@ -2,11 +2,9 @@
 
 import localFont from "next/font/local";
 import "./globals.css";
-import Footer from "./components/Footer";
-import CartProvider from "./components/Providers";
-import LoadingWrapper from "./components/loadingwrapper";
-
-// app/layout.tsx
+import Footer from "./components/layout/Footer";
+import CartProvider from "./components/layout/Providers";
+import LoadingWrapper from "./components/layout/loadingwrapper";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",

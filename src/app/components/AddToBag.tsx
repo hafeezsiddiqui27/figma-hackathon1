@@ -79,23 +79,29 @@ export default function AddToBag({
   const handleAddToCart = () => {
     addItem(product); // Add item to cart
     toast.success(`${name} has been added to your cart!`, {
-      position: "top-right", // Position of the toast
-      autoClose: 3000, // Duration for the toast to be visible
+      position: "bottom-right", // Position of the toast
+      autoClose: 2000, // Duration for the toast to be visible
       hideProgressBar: false, // Show progress bar (optional)
       closeOnClick: true, // Allow closing on click
-      pauseOnHover: true, // Pause on hover
+      pauseOnHover: false, // Pause on hover
       draggable: true, // Allow dragging
       progress: undefined, // Optional, can specify a progress bar
+    
     });
   };
 
-  return (
+  return (<div>
+   
     <button
       onClick={handleAddToCart} // Use the new function for onClick
       className="bg-blue-600 text-white py-2 px-4 rounded-full hover:bg-blue-700 transition duration-300"
     >
       <AiOutlineShoppingCart />
-      <ToastContainer />
-    </button>
+      <a href="/cart">
+        <ToastContainer />
+        </a>
+      </button>
+   
+    </div>
   );
 }
