@@ -462,6 +462,7 @@ import { AiOutlineDelete } from "react-icons/ai";
 
 import Image from "next/image";
 import Link from "next/link";
+import EmptyCartPage from "../components/EmptyCart";
 
 interface CartEntry {
   id: string;
@@ -509,12 +510,7 @@ export default function CartPage() {
         Your Shopping Cart
       </h1>
       {cartCount === 0 ? (
-        <div className="text-center py-6">
-          <h2 className="text-lg text-gray-700">Your cart is empty!</h2>
-          <p className="mt-2 text-gray-500">
-            Start adding items to see them here.
-          </p>
-        </div>
+        <EmptyCartPage />
       ) : (
         <div className="flex flex-col gap-6">
           {/* Cart Items */}
@@ -610,12 +606,12 @@ export default function CartPage() {
             <div className="mt-6 text-center text-sm text-gray-500">
               <p>
                 OR{" "}
-                <a
+                <Link
                   href="/"
                   className="font-medium text-green-600 hover:text-green-500"
                 >
                   Continue Shopping
-                </a>
+                </Link>
               </p>
             </div>
             <div className="mt-6 text-center">

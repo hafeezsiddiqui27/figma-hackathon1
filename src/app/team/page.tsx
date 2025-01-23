@@ -2,6 +2,7 @@ import React from "react";
 import Header from "../components/aboutheader";
 import Image from "next/image";
 import Teamuser from "../components/Teamuser";
+import Link from "next/link";
 
 const Team = () => {
   return (
@@ -14,12 +15,12 @@ const Team = () => {
         </h1>
 
         <div className="flex flex-row">
-          <a
+          <Link
             href="/"
             className="font-montserrat text-sm font-bold leading-[24px] tracking-[0.2px] text-center underline decoration-transparent"
           >
             Home
-          </a>
+          </Link>
           <span className="mx-2"> &gt; </span>
           <span className="font-montserrat text-sm font-bold leading-[24px] tracking-[0.2px] text-center">
             Team

@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import FeauturedProducts from "../components/home/feauturedProducts"; // Import your FeaturedProducts component
+import FeauturedProducts from "./home/feauturedProducts"; // Import your FeaturedProducts component
 
 const EmptyCartPage = () => {
   return (
@@ -27,7 +27,8 @@ const EmptyCartPage = () => {
 
       <div className="mt-12 w-full">
         <h3 className="text-2xl sm:text-3xl font-bold text-[#252B42] text-center mb-6">
-          While You&apos;re Here, Check Out Our Featured Products!
+          While You&apos;re Here, Scroll Down to Check Out Our Featured
+          Products!
         </h3>
         <FeauturedProducts />
       </div>
