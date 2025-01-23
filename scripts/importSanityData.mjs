@@ -458,7 +458,7 @@ async function uploadProduct(product) {
 
     if (imageId) {
       const document = {
-         _type: "producting", // Update schema name here
+        _type: "products", // Update schema name here
         // title: product.title,
         // price: product.price,
         title: product.title,
@@ -477,7 +477,7 @@ async function uploadProduct(product) {
           },
         },
         tags: product.tags,
-       
+
         isNew: product.isNew,
       };
 

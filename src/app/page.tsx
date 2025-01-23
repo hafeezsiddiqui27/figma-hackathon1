@@ -8,27 +8,7 @@ import Header from "./components/aboutheader";
 import Herosection from "./components/hero";
 import FeaturedPosts from "./components/home/featuredposts";
 
-// export default function Home() {
-//   return (
-//     <div className="border-8 border-red-500 ">
-//       <div className="hidden md:block">
-//         <Nav1 />
-//         <NavLight />
-//       </div>
 
-//       <div className="md:hidden">
-//         <Header />
-//       </div>
-
-//       <Herosection />
-//       <EditorSection />
-//       <FeaturedProducts />
-//       <ClassicProduct />
-//       {/* <NeuralProduct /> */}
-//       <FeaturedPosts />
-//     </div>
-//   );
-// }
 export default function Home() {
   return (
     <div className="overflow-x-hidden  w-full">
@@ -45,6 +25,7 @@ export default function Home() {
 
       {/* Main content sections */}
       <Herosection />
+      {/* <ImageSlider /> */}
       <EditorSection />
       <FeaturedProducts />
       <ClassicProduct />

@@ -10,7 +10,6 @@
     "import-data": "node scripts/importSanityData.mjs"
   },
   "dependencies": {
-    "@clerk/nextjs": "^6.9.12",
     "@radix-ui/react-dialog": "^1.1.2",
     "@radix-ui/react-slot": "^1.1.1",
     "@sanity/client": "^6.25.0",
@@ -23,25 +22,24 @@
     "clsx": "^2.1.1",
     "dotenv": "^16.4.7",
     "lucide-react": "^0.468.0",
-    "next": "14.2.18",
+    "next": "^14.2.2",
     "next-sanity": "^9.8.30",
-    "react": "^18",
-    "react-dom": "^18",
     "react-icons": "^5.4.0",
     "react-toastify": "^11.0.3",
     "sanity": "^3.68.3",
     "stripe": "^17.5.0",
     "styled-components": "^6.1.13",
+    "swiper": "^11.2.1",
     "tailwind-merge": "^2.5.5",
     "tailwindcss-animate": "^1.0.7",
     "use-shopping-cart": "^3.2.0"
   },
   "devDependencies": {
     "@types/node": "^20",
-    "@types/react": "^18",
+    "@types/react": "^19.0.7",
     "@types/react-dom": "^18",
     "eslint": "^8",
-    "eslint-config-next": "14.2.18",
+    "eslint-config-next": "^15.1.5",
     "postcss": "^8",
     "tailwindcss": "^3.4.1",
     "typescript": "^5"

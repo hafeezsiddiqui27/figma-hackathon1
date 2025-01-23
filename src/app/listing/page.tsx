@@ -4,7 +4,7 @@ import ShopSection from "../components/Shopsection";
 
 import Header from "../components/aboutheader";
 
-import ProductList from "../producting/page";
+import ProductList from "../products/page";
 
 const ShopPage = () => {
   return (
@@ -44,13 +44,7 @@ const ShopPage = () => {
       </section>
 
       {/* Pagination */}
-      <div className="flex justify-center space-x-4 py-6">
-        <button className="px-4 py-2 border rounded">First</button>
-        <button className="px-4 py-2 border rounded">1</button>
-        <button className="px-4 py-2 border bg-gray-200 rounded">2</button>
-        <button className="px-4 py-2 border rounded">3</button>
-        <button className="px-4 py-2 border rounded">Next</button>
-      </div>
+   
     </div>
   );
 };

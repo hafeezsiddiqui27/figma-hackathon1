@@ -3,6 +3,7 @@
 import { useEffect, useState } from "react";
 import { client } from "@/sanity/lib/client";
 import Link from "next/link";
+import Image from "next/image";
 
 type Product = {
   _id: string;
@@ -25,7 +26,7 @@ export default function SearchBar() {
     const fetchProducts = async () => {
       try {
         const data = await client.fetch(`
-          *[_type == "producting"] {
+          *[_type == "products"] {
             _id,
             title,
             description,
@@ -64,7 +65,7 @@ export default function SearchBar() {
   };
 
   return (
-    <div className="relative ml-5 w-[40vw] max-w-md">
+    <div className="relative ml-4 w-[30vw] md:w-[20vw] max-w-md">
       {/* Search Input */}
       <input
         type="text"
@@ -76,7 +77,7 @@ export default function SearchBar() {
 
       {/* Loading State */}
       {loading && (
-        <div className="absolute z-10 w-full mt-2 bg-white border border-gray-200 rounded-lg shadow-lg p-3">
+        <div className="absolute z-10 w-full mt-2 bg-white border hidden border-gray-200 rounded-lg shadow-lg p-3">
           <p className="text-sm text-gray-500">Loading...</p>
         </div>
       )}
@@ -90,19 +91,23 @@ export default function SearchBar() {
 
       {/* Search Results Dropdown */}
       {searchQuery && filteredProducts.length > 0 && (
-        <div className="absolute z-10 w-full mt-2 bg-white border border-gray-200 rounded-lg shadow-lg max-h-60 overflow-y-auto">
+        <div className="absolute z-40 w-full mt-2 bg-white border  border-gray-200 rounded-lg shadow-lg max-h-60 overflow-y-auto">
           {filteredProducts.map((product) => (
             <Link
-              href={`/producting/${product._id}`}
+              href={`/products/${product._id}`}
               key={product._id}
               passHref
             >
               <div className="flex items-center p-3 hover:bg-gray-100 cursor-pointer">
                 {/* Product Image */}
                 <div className="w-10 h-10 flex-shrink-0">
-                  <img
+                  <Image
                     src={product.productImage.asset.url}
                     alt={product.title}
+                    width={50}
+                    height={50
+
+                    }
                     className="w-full h-full object-cover rounded"
                   />
                 </div>
