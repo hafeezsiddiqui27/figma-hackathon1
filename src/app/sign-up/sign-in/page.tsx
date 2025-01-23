@@ -1,9 +1,21 @@
-import { SignIn } from "@clerk/nextjs";
+// import { SignIn } from "@clerk/nextjs";
 
-export default function SignInPage() {
+// export default function SignInPage() {
+//   return (
+//     <div className="flex items-center justify-center min-h-screen">
+//       <SignIn path="/sign-in" routing="path" signUpUrl="/sign-up" />
+//     </div>
+//   );
+// }
+
+import React from "react";
+
+const page = () => {
   return (
-    <div className="flex items-center justify-center min-h-screen">
-      <SignIn path="/sign-in" routing="path" signUpUrl="/sign-up" />
+    <div>
+      <h1>dd</h1>
     </div>
   );
-}
+};
+
+export default page;
