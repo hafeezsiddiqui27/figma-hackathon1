@@ -642,7 +642,7 @@ import { AiOutlineArrowLeft } from "react-icons/ai";
 const stripePromise = loadStripe(process.env.NEXT_PUBLIC_STRIPE_KEY || "");
 
 const CheckoutPage = () => {
-  const { cartDetails, totalPrice, clearCart } = useShoppingCart();
+  const { cartDetails, totalPrice,  } = useShoppingCart();
   const router = useRouter();
   const [formData, setFormData] = useState({
     name: "",

@@ -1,4 +1,4 @@
-  import localFont from "next/font/local";
+import localFont from "next/font/local";
 // // // import "./globals.css";
 // // // import Footer from "./components/layout/Footer";
 // // // import CartProvider from "./components/layout/Providers";
@@ -69,7 +69,7 @@
 // // // // //       <html lang="en">
 // // // // //         <body>
 // // // // //           <SignedOut>
-         
+
 // // // // //           </SignedOut>
 // // // // //           <SignedIn>
 // // // // //             <UserButton />
@@ -159,48 +159,50 @@
 // // // //   );
 // // // // }
 
-import { ClerkProvider, SignedIn, SignedOut, UserButton } from '@clerk/nextjs';
-import { Metadata } from 'next';
-import CartProvider from './components/layout/Providers'; // Import your Cart provider
-import Footer from './components/layout/Footer'; // Import your Footer component
-import LoadingWrapper from './components/layout/loadingwrapper'; // Import the Loading Wrapper component
+import { ClerkProvider } from "@clerk/nextjs";
+import { Metadata } from "next";
+import CartProvider from "./components/layout/Providers"; // Import your Cart provider
+import Footer from "./components/layout/Footer"; // Import your Footer component
+import LoadingWrapper from "./components/layout/loadingwrapper"; // Import the Loading Wrapper component
 
-import './globals.css'; // Import global CSS
+import "./globals.css"; // Import global CSS
 
 // Define custom fonts
 const geistSans = localFont({
-  src: './fonts/GeistVF.woff',
-  variable: '--font-geist-sans',
-  weight: '100 900',
+  src: "./fonts/GeistVF.woff",
+  variable: "--font-geist-sans",
+  weight: "100 900",
 });
 const geistMono = localFont({
-  src: './fonts/GeistMonoVF.woff',
-  variable: '--font-geist-mono',
-  weight: '100 900',
+  src: "./fonts/GeistMonoVF.woff",
+  variable: "--font-geist-mono",
+  weight: "100 900",
 });
 
 export const metadata: Metadata = {
-  title: 'Aura - Elevate Your Fashion',
-  description: 'Discover Aura – Elevate your fashion with our exclusive range of stylish, high-quality clothing.',
-  keywords: 'aura, fashion, online store, clothing',
-  icons: { icon: '/favicon.ico' },
+  title: "Aura - Elevate Your Fashion",
+  description:
+    "Discover Aura – Elevate your fashion with our exclusive range of stylish, high-quality clothing.",
+  keywords: "aura, fashion, online store, clothing",
 };
 
-export default function RootLayout({ children }: { children: React.ReactNode }) {
+export default function RootLayout({
+  children,
+}: {
+  children: React.ReactNode;
+}) {
   return (
     <ClerkProvider>
       <html lang="en">
-        <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
-     
-
+        <body
+          className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        >
           <LoadingWrapper>
             <CartProvider>{children}</CartProvider>
           </LoadingWrapper>
-
           <Footer /> {/* Footer component */}
         </body>
       </html>
     </ClerkProvider>
   );
 }
-

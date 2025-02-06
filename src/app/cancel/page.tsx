@@ -20,7 +20,7 @@ const CancelPage = () => {
         </h1>
 
         <p className="text-base md:text-lg text-gray-600 mb-8">
-          We're sorry, but your order has been canceled. Please try again or contact us if you have any questions.
+          We&apos;re sorry, but your order has been canceled. Please try again or contact us if you have any questions.
         </p>
 
         <div className="flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-6 mt-8 w-full">
