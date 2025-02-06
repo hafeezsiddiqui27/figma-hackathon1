@@ -1,0 +1,7 @@
+Test Case ID,Test Case Description,Test Steps,Expected Result,Actual Result,Status,Security Level,Remarks
+TC001,Validate product listing page,Open product page > Verify products,Products displayed correctly,Products displayed correctly,Passed,Low,Product list loaded as expected.
+TC002,Test API error handling,Disconnect API > Refresh page,Show fallback UI with error message,Error message shown,Passed,Low,Error message displayed when API fails.
+TC003,Check cart functionality,Add product to cart > Verify cart contents,Cart updates with added product,Cart updates as expected,Passed,Low,  Cart updates properly when items added.
+TC004,Ensure responsiveness on mobile,Resize browser window > Check layout,Layout adjusts properly to screen size,Responsive layout working as intended,Passed,high, Layout adjusts correctly on mobile devices.
+TC005,Test product search functionality,Search for a product > Verify results,Relevant products displayed,Relevant products displayed,Passed,medium,Search function returns relevant results.
+TC006,Check Dynamic Routing ,Use products slug to navigate to its page,The correct product page should open.,Each product displayed correctly ,Passed,low, Routing to product pages works as expected.
